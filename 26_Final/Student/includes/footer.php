@@ -18,10 +18,12 @@
 
         <em>Sunday - Monday</em><br>
         closed<br><br>
+
+        <?php include('Store-Hours.php');?>
     </div><!-- column -->
 </div><!-- footer -->
 
-<small>&copy; 2018 AL Mahfuz</small>
+<small>&copy; <?php echo date('Y');?> <?php echo $companyName; ?></small>
 </div><!-- content -->
 </div><!-- wrapper -->
 
