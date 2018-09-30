@@ -47,6 +47,7 @@ if($store_hours->is_open()) {
     echo "Sorry, we're closed. Today's hours are " . $store_hours->hours_today() . ".";
 }
 
+echo "this is changes";
 
 
 ?>
