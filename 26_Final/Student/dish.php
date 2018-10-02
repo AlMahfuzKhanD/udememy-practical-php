@@ -32,7 +32,7 @@ function strip_bad_chars($input){
     <p><?php echo $dish["blurb"];?></p>
     <br>
     <p><strong>Suggested beverage: <?php echo $dish["drink"];?></strong></p>
- 
+
 
 
 </div><!-- dish -->
