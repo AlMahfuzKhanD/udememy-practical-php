@@ -50,4 +50,38 @@
             "img"  => "carlos"
         )
     );
+
+
+    // Menu Items
+
+
+    $menuItems = array(
+        "club-sandwich" => array(
+            "title" => "Club Sandwich",
+            "price" => 11,
+            "blurb" => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "drink" => "Club Soda"
+        ),
+
+        "dill-salmon" => array(
+            "title" => "Lemon &amp; Dill Salmon",
+            "price" => 18,
+            "blurb" => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "drink" => "Fancy Wine"
+        ),
+
+        "syper-salad" => array(
+            "title" => "The super Salad <sup>&reg;</sup>",
+            "price" => 34,
+            "blurb" => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "drink" => "Club Soda"
+        ),
+
+        "maxican-barbaco" => array(
+            "title" => "Maxican Barbaco",
+            "price" => 23,
+            "blurb" => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "drink" => "Beer with a line"
+        )
+    );
 ?>
