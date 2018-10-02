@@ -82,8 +82,46 @@ include ('includes/header.php');
                 exit;
             }
 
-        }
+            // Add the reciepient email to a variable
+
+            $to = "almahfuz380@gmail.com";
+             // create subject
+            $subject = "$name sent you a message via your contact form";
+
+            // Construct the message
+            $message = "Name: $name\r\n";
+            $message .= "Email: $email\r\n";
+            $message .= "Message: \r\n$msg";
+
+            // if the subscribed checkbox was checked ...
+            if(isset($_POST['subscribe']) && $_POST['subscribe'] == 'Subscribe'){
+
+                // Add a new line to the $message
+                $message .= "\r\n\r\nPlease add $email to the mailing list. \r\n";
+            }
+
+            $message = wordwrap($message,72);
+
+            // Set the mail headers into a variable
+            $headers = "MIME-Version: 1.0\r\n";
+            $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
+            $headers .= "Form: $name <$email>\r\n";
+            $headers .= "X-Priority: 1\r\n";
+            $headers .= "X-MSMail-Priority: High\r\n\r\n";
+
+
+            // Send the email
+            mail($to, $subject , $message,$headers);
+
+
     ?>
+
+            <!-- Show success message after email has sent -->
+            <h5>Thanks for contacting Franklin's</h5>
+            <p>Pleas allow 24 hours for response.</p>
+            <p><a href="/final"class="button block">&laquo;Go to Home Page</a></p>
+
+            <?php }else {?>
 
 
     <form method="post" action="" id="contact-form">
@@ -104,6 +142,8 @@ include ('includes/header.php');
 
 
     </form>
+
+            <?php } ?>
 </div> <!-- contact -->
 
 <?php include ('includes/footer.php');
